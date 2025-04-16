@@ -161,3 +161,12 @@ main {
     letter-spacing: 0.1em;
     color: #00FF00;
 }
+
+footer section {
+    color: lightgray;
+    font-family: sans-serif;
+    font-size: 10px;
+    white-space: normal;
+    text-align: center;
+
+}

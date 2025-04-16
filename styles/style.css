@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: lightgray;
+
+}
+
+.HBHD01 {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    text-align: center;
+    color: purple;
+}
+/* Alerta! Entender melhor os atributos. */
+.tit {
+    font-family: monospace;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid transparent;
+    animation: typing 3s steps(10, end) forwards;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.barradigitacao {
+    display: inline-block;
+    animation: blink 0.7s infinite;
+    color: purple; /* ou qualquer cor do cursor */
+}
+
+/* Animação do cursor */
+@keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+}
+  
+/* Animação de digitação */
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 30ch; /* Ajusta com base na quantidade de letras */
+    }
+}
+
+
+
+.HBMN01 {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray; 
+    justify-content: center;
+}
+
+.HBMNU01 {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+    margin: 1%;
+}
+
+.HBMNU01 li {
+    width: 20%;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: whitesmoke;
+    padding: 7px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.HBMNU01 li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: rgb(192, 80, 192);
+}

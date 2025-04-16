@@ -27,7 +27,7 @@ header {
     white-space: nowrap;
     overflow: hidden;
     border-right: 0.15em solid transparent;
-    animation: typing 3s steps(10, end) forwards;
+    animation: typing 4s steps(25, end) infinite;
     text-align: center;
     display: block;
     margin: 0 auto;
@@ -51,13 +51,17 @@ header {
   
 /* Animação de digitação */
 @keyframes typing {
-    from {
-      width: 0;
+    0% {
+     width: 0;
     }
-    to {
-      width: 30ch; /* Ajusta com base na quantidade de letras */
+    70% {
+     width: 100%;
+    }
+    100% {
+     width: 100%;
     }
 }
+
 /* Estudar mais aqui */
 .HBMN01 {
     display: flex;

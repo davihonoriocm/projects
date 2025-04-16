@@ -1,12 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
-header {
-    background-color: lightgray;
+html {
+  background-color: black  ;
+}
 
+/* HEADER */
+
+header {
+    /* personalizar header aqui */
 }
 
 .HBHD01 {
@@ -14,12 +18,12 @@ header {
     flex-direction: column;
     padding: 2%;
     text-align: center;
-    color: purple;
+    color: #00FF00;
 }
 /* Alerta! Entender melhor os atributos. */
 .tit {
     font-family: monospace;
-    font-size: 24px;
+    font-size: 36px;
     white-space: nowrap;
     overflow: hidden;
     border-right: 0.15em solid transparent;
@@ -32,7 +36,7 @@ header {
 .barradigitacao {
     display: inline-block;
     animation: blink 0.7s infinite;
-    color: purple; /* ou qualquer cor do cursor */
+    color: #00FF00; /* ou qualquer cor do cursor */
 }
 
 /* Animação do cursor */
@@ -54,17 +58,76 @@ header {
       width: 30ch; /* Ajusta com base na quantidade de letras */
     }
 }
-
-
-
+/* Estudar mais aqui */
 .HBMN01 {
     display: flex;
     flex-direction: row;
-    background-color: lightgray; 
     justify-content: center;
 }
 
-.HBMNU01 {
+.HBMN01 ul {
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+    margin: 1%;
+}
+
+.HBMN01 ul li {
+    width: 20%;
+    cursor: pointer;
+    border: 4px solid purple;
+    background-color: rgb(24, 24, 24);
+    padding: 7px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.HBMN01 ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: monospace, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #00FF00;
+}
+
+/* MAIN */
+
+main {
+    color: #00FF00;
+}
+
+.HBMSA01 {
+    margin: 2.5%;
+    height: 70%;
+}
+
+.HBMSA01 h1 {
+    text-align: center;
+    font-family: monospace;
+    font-size: 24px;
+    text-decoration: underline;
+    margin-bottom: 2%;
+}
+
+.HBMSA01 p {
+    text-align: justify;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+/* FOOTER */
+
+.HBFN01 {
+    display: flex;
+    flex-direction: row;
+    ; 
+    justify-content: center;
+}
+
+.HBFN01 ul {
     width: 50%;
     display: flex;
     justify-content: space-around;
@@ -73,21 +136,24 @@ header {
     margin: 1%;
 }
 
-.HBMNU01 li {
-    width: 20%;
+
+.HBFN01 ul li {
+    width: 12%;
     cursor: pointer;
-    border: 2px solid white;
-    background-color: whitesmoke;
-    padding: 7px;
+    border: 4px solid purple;
+    background-color: rgb(24, 24, 24);
+    padding: 5px;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
-.HBMNU01 li a {
+
+.HBFN01 ul li a {
+    font-size: 12px;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: sans-serif;
+    font-family: monospace, sans-serif;
     font-weight: 700;
     letter-spacing: 0.1em;
-    color: rgb(192, 80, 192);
+    color: #00FF00;
 }
